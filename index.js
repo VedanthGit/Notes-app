@@ -321,7 +321,7 @@ app.get("/search-notes/", authenticateToken, async (req, res) => {
 		});
 	}
 });
-
+const dotenv = require("dotenv");
 dotenv.config();
 const port = 8000 || process.env;
 app.listen(port);
